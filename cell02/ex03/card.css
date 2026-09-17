@@ -1,0 +1,27 @@
+tr {
+    text-align: center;
+}
+
+th {
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.contato {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
