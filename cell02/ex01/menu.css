@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.hamburguer {
+    text-decoration: none;
+    background-color: tan;
+    width: 100%;
+}
+
+.hamburguer a{
+    text-decoration: none;
+    color:black
+}
+
+.hamburguer:hover .nav {
+    display: flex;
+    flex-direction: column;
+}
