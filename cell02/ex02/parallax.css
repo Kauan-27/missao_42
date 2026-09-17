@@ -1,0 +1,46 @@
+body, html {
+ height: 100%;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+    justify-content: center;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+}
+
+.titulos {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: gray;
+    margin: 0;
+}
+
+.img-1 {
+    background-image: url("https://placehold.co/600x400?text=Hello");
+    height: 1000px;
+}
+
+.img-2 {
+    background-image: url("https://placehold.co/600x400?text=World");
+    height: 1000px;
+}
