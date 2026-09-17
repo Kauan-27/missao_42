@@ -3,26 +3,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	margin: 0;
-	background-color: white;
-	transition: background-color 0.3s ease;
 }
-
-.botao {
-	background-color: crimson;
-	color: white;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-	border-radius: 8px;
-	border: none;
-	transition: all 0.3s;
-}
-
-.botao:hover {
+.balao {
+	min-height: 200px;
+	min-width: 200px;
 	background-color: red;
-}
-
-.botao:active {
-	background-color: crimson;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: all 0.3s;
 }
