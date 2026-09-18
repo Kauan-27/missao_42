@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balão</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.balao {
+    min-height: 200px;
+    min-width: 200px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+    </style>
+</head>
+<body>
+
+    <div id="balao" class="balao"></div>
+
+    <script>
+$(document).ready(function() {
+    const cores = ['red', 'green', 'blue'];
+    const $balao = $('#balao');
+
+    let indice = 0;
+    let largura = $balao.width();
+    let altura = $balao.height();
+
+    $balao.on('click', function() {
+        indice = (indice + 1) % cores.length;
+        largura += 10;
+        altura += 10;
+
+        if (largura >= 420) {
+            largura = 200;
+            altura = 200;
+        }
+
+        $balao.css({
+            'background-color': cores[indice],
+            'width': largura + 'px',
+            'height': altura + 'px'
+        });
+    });
+
+    $balao.on('mouseleave', function() {
+        indice = (indice - 1 + cores.length) % cores.length;
+
+        largura = Math.max(200, largura - 5);
+        altura = Math.max(200, altura - 5);
+
+        $balao.css({
+            'background-color': cores[indice],
+            'width': largura + 'px',
+            'height': altura + 'px'
+        });
+    });
+});
+    </script>
+</body>
+</html>

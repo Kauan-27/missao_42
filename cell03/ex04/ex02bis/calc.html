@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </head>
 <body>
     
@@ -27,31 +29,31 @@
 <div id="resultado"></div>
 
 <script>
-
 setInterval(() => {
   alert("Please, use me...");
 }, 30000);
 
-document.getElementById('btnCalcular').addEventListener('click', () => {
-  const val1 = document.getElementById('num1').innerText.trim();
-  const val2 = document.getElementById('num2').innerText.trim();
-  const op = document.getElementById('operador').value;
-  const resDiv = document.getElementById('resultado');
+$('#btnCalcular').on('click', () => {
+  const val1 = $('#num1').text().trim();
+  const val2 = $('#num2').text().trim();
+  const op = $('#operador').val();
+  const $resDiv =$('#resultado');
 
   const n1 = parseInt(val1, 10);
   const n2 = parseInt(val2, 10);
 
   if (isNaN(n1) || isNaN(n2) || val1.includes('.') || val1.includes(',') || val2.includes('.') || val2.includes(',')) {
     const msgErro = "Error :(";
-    resDiv.innerText = msgErro;
+    $resDiv.text(msgErro);
     console.error(msgErro);
     return;
   }
 
   if (op === '/' && n2 === 0) {
     const msgZero = "It's over 9000!";
-    resDiv.innerText = msgZero;
+    $resDiv.text(msgZero);
     console.error(msgZero);
+    alert(msgZero);
     return;
   }
 
@@ -63,10 +65,10 @@ document.getElementById('btnCalcular').addEventListener('click', () => {
     case '/': resultado = n1 / n2; break;
   }
 
-  resDiv.innerText = `Resultado: ${resultado}`;
+  $resDiv.text(`Resultado: ${resultado}`);
   console.log(`Cálculo: ${n1} ${op} ${n2} = ${resultado}`);
+  alert(`Resultado: ${resultado}`);
 });
-
 </script>
 
 </body>
