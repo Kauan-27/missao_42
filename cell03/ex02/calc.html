@@ -44,7 +44,7 @@ document.getElementById('btnCalcular').addEventListener('click', () => {
   const n2 = parseInt(val2, 10);
 
   if (isNaN(n1) || isNaN(n2) || val1.includes('.') || val1.includes(',') || val2.includes('.') || val2.includes(',')) {
-    const msgErro = "'Error : (Apenas números inteiros são aceitos)'";
+    const msgErro = "'Error :(";
     resDiv.innerText = msgErro;
     console.error(msgErro);
     return;
