@@ -3,93 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
-
-    <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="https://bootstrapmade.com/assets/css/demo.css?v=132">
-
+    <title>TEAM COMETA 42 - Integrantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-    <body>
-        <header id="header">
+<body class="bg-light d-flex align-items-center min-vh-100 py-5">
 
-    <div class="logo">
-      <a href="https://bootstrapmade.com/" rel="home" title="Back to BootstrapMade Homepage"><img alt="BootstrapMade" src="https://bootstrapmade.com/assets/img/logo.png"></a>
-    </div>
-    <div class="preview-devices">
-      <ul>
-        <li class="preview-test preview-devices-active" id="preview-test-desktop" title="Desktop preview of the  Workfolio template"><a href=""><svg class="icon icon-preview"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#preview"/></svg></a></li>
-        <li class="preview-test" id="preview-test-tablet" title="Tablet preview of the Workfolio template"><a href=""><svg class="icon icon-tablet"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#tablet"/></svg></a></li>
-        <li class="preview-test" id="preview-test-mobile" title="Mobile preview of the Workfolio template"><a href=""><svg class="icon icon-smartphone"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#smartphone"/></svg></a></li>
-      </ul>
-    </div>
-
-    <div class="current-template">
-              <a href="https://bootstrapmade.com/demo/Rival/" title="Previous Template: Rival" target="_top"><svg class="icon icon-chevron-left"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#chevron-left"/></svg></a>
-            <a class="template-home" href="https://bootstrapmade.com/workfolio-bootstrap-portfolio-template/" title="Workfolio Template Home Page">Workfolio</a>
-            <a href="https://bootstrapmade.com/demo/ShopWise/" title="Next Template: ShopWise" target="_top"><svg class="icon icon-chevron-right"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#chevron-right"/></svg></a>
-          </div>
-    
-    <div class="navigate">
-      <a href="https://bootstrapmade.com/content/demo/Workfolio/" target="_top" title="Hide the demo bar"><svg class="icon icon-external-link"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#external-link"/></svg></a>
-      <a class="download" href="https://bootstrapmade.com/workfolio-bootstrap-portfolio-template/#download" title="Download the Workfolio Template"><svg class="icon icon-download"  fill="currentColor"><use xlink:href="https://bootstrapmade.com/assets/img/icons.svg#download"/></svg> <span>Download</span></a>
-    </div>
-
-  </header>
-        
-        <div class="container">
-            <h2 style="text-align: center; margin: 10px">Cartão de Perfil</h2>
-
-            <div style="display: flex; gap: 20px; justify-content: center; width: 100%;">
-                
-                <table>
-                    <tr>
-                        <td><img src="img/pfpKauan.jpeg" alt="User Image"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h1>KAUAN ANDRADE</h1></td>
-                    </tr>
-                    <tr>
-                        <td><p>Estudante de ADS - IFSP</p></td>
-                    </tr>
-                    <tr>
-                        <td><p>42 São Paulo</p></td>
-                    </tr>
-
-                    <tr style="background-color: black;">
-                        <td>
-                            <div class="curriculoAcess">
-                                <h3><a href="./kauan.html"><- Acessar currículo -></a></h3>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-
-                <table>
-                    <tr>
-                        <td><img src="img/pfpIngrid.jpeg" alt="User Image"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h1>INGRID NASCIMENTO</h1></td>
-                    </tr>
-                    <tr>
-                        <td><p>Marketing, Dados, CRM & Tecnologia</p></td>
-                    </tr>
-                    <tr>
-                        <td><p>42 São Paulo</p></td>
-                    </tr>
-
-                    <tr style="background-color: black;">
-                        <td>
-                            <div class="curriculoAcess">
-                                <h3><a href="./ingrid.html"><- Acessar currículo -></a></h3>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5">TEAM COMETA 42</h1>
+            <p class="text-muted lead">Selecione um perfil para visualizar o currículo completo</p>
         </div>
-    </body>
+
+        <div class="row g-4 justify-content-center align-items-stretch">
+            
+            <!-- CARD KAUAN -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow text-center overflow-hidden">
+                    <div class="pt-4 px-3">
+                        <img src="img/pfpKauan.jpeg" alt="Kauan Andrade" class="rounded-circle img-thumbnail shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <h2 class="fs-4 fw-bold mb-2">KAUAN ANDRADE</h2>
+                        <p class="text-secondary mb-1">Estudante de ADS - IFSP</p>
+                        <p class="badge bg-secondary align-self-center px-3 py-2 mt-2">42 São Paulo</p>
+                    </div>
+                    <div class="bg-dark p-3 mt-auto">
+                        <a href="./kauan.html" class="text-white text-decoration-none fw-bold d-block text-uppercase small">
+                            Acessar currículo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD INGRID -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow text-center overflow-hidden">
+                    <div class="pt-4 px-3">
+                        <img src="img/pfpIngrid.jpeg" alt="Ingrid Nascimento" class="rounded-circle img-thumbnail shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <h2 class="fs-4 fw-bold mb-2">INGRID NASCIMENTO</h2>
+                        <p class="text-secondary mb-1">Growth | Marketing, Dados, CRM &amp; Tecnologia</p>
+                        <p class="badge bg-secondary align-self-center px-3 py-2 mt-2">42 São Paulo</p>
+                    </div>
+                    <div class="bg-dark p-3 mt-auto">
+                        <a href="./ingrid.html" class="text-white text-decoration-none fw-bold d-block text-uppercase small">
+                        Acessar currículo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/script/bootstrap.bundle.min.js"></script>
+</body>
 </html>
